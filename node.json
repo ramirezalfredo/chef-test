@@ -1,7 +1,6 @@
 { 
 	"run_list": [ 
 		"recipe[java]",
-		"recipe[homebrew]",
 		"recipe[tomcat]"
 	] 
 } 
