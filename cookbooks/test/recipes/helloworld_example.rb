@@ -33,7 +33,7 @@ cookbook_file '/opt/tomcat_helloworld/conf/server.xml' do
   notifies :restart, 'tomcat_service[helloworld]'
 end
 
-remote_file '/opt/tomcat_helloworld/webapps/sample.war' do
+remote_file '/opt/tomcat_helloworld/webapps/ROOT.war' do
   owner 'cool_user'
   mode '0644'
   source 'https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war'
